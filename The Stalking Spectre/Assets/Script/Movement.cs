@@ -38,8 +38,5 @@ public class Movement : MonoBehaviour
             //transform.Translate(1f, 0f, 1f);
             m_RB.AddForce(transform.right * m_MoveSpeed, ForceMode.Force);
         }
-
-        //Code for looking direction
-
     }
 }
