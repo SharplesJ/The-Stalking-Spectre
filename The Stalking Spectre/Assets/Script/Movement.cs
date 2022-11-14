@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //Code for the movement
         if (Input.GetKey(KeyCode.W))
         {
             //transform.Translate(0f, 0f, 1f);
@@ -37,5 +38,8 @@ public class Movement : MonoBehaviour
             //transform.Translate(1f, 0f, 1f);
             m_RB.AddForce(transform.right * m_MoveSpeed, ForceMode.Force);
         }
+
+        //Code for looking direction
+
     }
 }

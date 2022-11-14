@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ghost_AI : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Ghost_AI : MonoBehaviour
         Transform ghostTransform = ghost.transform;
         Vector3 ghostPosition = ghostTransform.position;
 
+        //move the ghost towards the player
         if ((playerPosition.x < ghostPosition.x) & (playerPosition.z < ghostPosition.z))
         {
             transform.position = transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, -movementSpeed * Time.deltaTime);
