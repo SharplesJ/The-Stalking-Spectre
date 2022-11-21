@@ -887,6 +887,8 @@ GameObject:
   - component: {fileID: 1820871054}
   - component: {fileID: 1820871053}
   - component: {fileID: 1820871055}
+  - component: {fileID: 1820871056}
+  - component: {fileID: 1820871057}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -919,6 +921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c29a800d0492e49b0f48151798cd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1820871056}
   m_MoveSpeed: 20
   m_RB: {fileID: 1820871053}
 --- !u!4 &1820871052
@@ -980,6 +983,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
+--- !u!95 &1820871056
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820871049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6793770d179eb204eac183a49f46f430, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3b1b66959b943db44aee93246adc580f, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1820871057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820871049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c207bfedba44924fab7012e22e592f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ArrowPrefab: {fileID: 4623163056368642107, guid: 407a95c677f007f4aadf34c762eeefda, type: 3}
+  m_FiringForce: 10
 --- !u!1001 &1910223230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1888,6 +1925,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5708138747535099180, guid: 977644597387cc14892d7b14a0d64547, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 977644597387cc14892d7b14a0d64547, type: 3}

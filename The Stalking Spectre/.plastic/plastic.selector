@@ -1,0 +1,4 @@
+repository "The Stalking Spectre@Eatcakex@cloud"
+  path "/"
+    br "/main"
+    co "/main"

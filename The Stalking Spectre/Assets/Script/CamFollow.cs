@@ -13,8 +13,6 @@ public class CamFollow : MonoBehaviour
         Transform playerTransform = player.transform;
         Vector3 playerPosition = playerTransform.position;
 
-        Debug.Log(playerPosition);
-
         transform.position = playerPosition + new Vector3(0, 13, 0);
     }
 }
